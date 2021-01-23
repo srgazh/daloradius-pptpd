@@ -15,7 +15,7 @@ services:
       - MYSQL_PORT=3306
       - MYSQL_DATABASE=radius
       - MYSQL_USER=radius
-      - MYSQL_PASSWORD=ZxmXncUWooP
+      - MYSQL_PASSWORD=userpass
     volumes:
       - ./etc/clients.conf:/etc/freeradius/3.0/clients.conf
   radius-mysql:
@@ -25,8 +25,8 @@ services:
     environment:
       - MYSQL_DATABASE=radius
       - MYSQL_USER=radius
-      - MYSQL_PASSWORD=ZxmXncUWooP
-      - MYSQL_ROOT_PASSWORD=Vz2332nbnz2
+      - MYSQL_PASSWORD=userpass
+      - MYSQL_ROOT_PASSWORD=rootpass
     volumes:
       - "./radius-mysql:/var/lib/mysql"
   phpmyadmin:
@@ -38,7 +38,7 @@ services:
       - '8080:80'
     environment:
       PMA_HOST: radius-mysql
-      MYSQL_ROOT_PASSWORD: Vz2332nbnz2 
+      MYSQL_ROOT_PASSWORD: rootpass 
   pptpd:
     depends_on:
       - "radius"
