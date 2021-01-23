@@ -12,9 +12,10 @@ Russian instruction:
 
 Строка 241
 Создаем доступ клиенту 
+
 client docker {
-		ipaddr = $IPPPTP   <- адрес сервера PPTPD
-		secret = $PASS <- секретная фраза
+		ipaddr = $IPPPTP   адрес сервера PPTPD
+		secret = $PASS секретная фраза
 }
 
 2) PPTPD
