@@ -6,7 +6,17 @@ Thank you for your hard work aka Frauhottelmann!
 
 Russian instruction:
 
+
+
+
 1. Daloradius
+
+Вход Daloradius http://вашип/daloradius/
+Пользователь administrator
+Пароль radius
+
+Вход PMA 
+http://вашип:8080
 
 /etc/clients.conf
 
@@ -45,6 +55,15 @@ $IPRADIUS $PASS
 English instruction:
 
 1. Daloradius
+
+Daloradius login http://Yourip/daloradius/
+User administrator
+Password radius
+
+PMA Login 
+http://Yourip:8080
+
+
 
 /etc/clients.conf
 
