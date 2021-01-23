@@ -43,7 +43,7 @@ services:
     depends_on:
       - "radius"
     image: srgazh/pptpd:latest
-    container_name: p
+    container_name: pptpd
     volumes:
       - ./etc/pptpd.conf:/etc/pptpd.conf
       - ./etc/ppp/pptpd-options:/etc/ppp/pptpd-options
