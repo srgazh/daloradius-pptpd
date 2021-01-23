@@ -1,0 +1,28 @@
+name pptpd
+refuse-pap
+refuse-chap
+refuse-mschap
+require-mschap-v2
+#require-mppe-128
+
+# Network and Routing
+ms-dns 8.8.8.8
+ms-dns 8.8.4.4
+proxyarp
+nodefaultroute
+
+# Logging
+logfile /var/log/pptpd.log
+debug
+dump
+
+# Miscellaneous
+lock
+nobsdcomp
+novj
+novjccomp
+#nologfd
+
+plugin radius.so
+plugin radattr.so
+radius-config-file /etc/radiusclient/radiusclient.conf
