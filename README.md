@@ -6,7 +6,7 @@ Thank you for your hard work aka Frauhottelmann!
 
 Russian instruction:
 
-1) Daloradius
+1. Daloradius
 
 /etc/clients.conf
 
@@ -18,13 +18,13 @@ client docker {
 		secret = $PASS
 }
 
-2) PPTPD
+2. PPTPD
 
 /etc/pptpd.conf конфигурация PPTPD
 /etc/ppp/pptpd-options опции PPTPD
 ./log файлы логов
 
-3) Radiusclient
+3. Radiusclient
 
 /etc/radiusclient.conf конфигурация 
 
@@ -44,7 +44,7 @@ $IPRADIUS $PASS
 
 English instruction:
 
-1) Daloradius
+1. Daloradius
 
 /etc/clients.conf
 
@@ -55,13 +55,13 @@ client docker {
 		secret = $PASS <- secret phrase
 }
 
-2) PPTPD
+2. PPTPD
 
 /etc/pptpd.conf configure PPTPD
 /etc/ppp/pptpd-options PPTPD options
 ./log log files
 
-3) Radiusclient
+3. Radiusclient
 
 /etc/radiusclient.conf configuration 
 
